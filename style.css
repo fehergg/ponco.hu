@@ -27,6 +27,8 @@ body {
     border-radius: 5px; /* Optional rounded corners */
     font-family: 'Courier New', Courier, monospace;
     color: #cc00ff;;
+    position: relative;
+z-index: 1;
 }
 body
 {

@@ -1,7 +1,7 @@
 h1 {
     text-align: center;
     color: #cc00ff;
-    padding: 1px;
+    padding: 88px;
     font-family: 'Courier New', Courier, monospace;
 }
 body {
@@ -23,7 +23,7 @@ body {
 .text-element {
     font-size: 24px;
     padding: 10px;
-    background-color: #228068; /* Optional background for better visibility */
+    background-color: #22806996; /* Optional background for better visibility */
     border-radius: 5px; /* Optional rounded corners */
     font-family: 'Courier New', Courier, monospace;
     color: #cc00ff;;

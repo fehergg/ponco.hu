@@ -4,6 +4,7 @@ h1 {
     padding: 88px;
     font-family: 'Courier New', Courier, monospace;
 }
+
 body {
     height: 100vh;
     margin: 0;
@@ -11,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #ffffff; /* Optional background color */
+    
 }
 
 /* Container that holds the text elements */
@@ -30,6 +32,18 @@ body {
     position: relative;
 z-index: 1;
 }
+
+img {
+    height: 40px;
+    width: 60px;
+    
+}
+
+#discord {
+    height: 50px;
+    width: 100px;
+}
+
 body
 {
   overflow:hidden;

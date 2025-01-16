@@ -7,6 +7,7 @@
     <title>Ponco.hu</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="tojasmuffin.png">
+    <link rel="stylesheet" href="script.js">
 </head>
 <body>
     <h1>Ponco™</h1>
@@ -14,6 +15,7 @@
         <div class="text-element"><a href="https://steamcommunity.com/profiles/76561198879879608" target="_blank"><img src="Steam_icon_logo.svg.png" id="steam" alt=""></a></div>
         <div class="text-element"><a href="https://discordlookup.com/user/1176301551430668348" target="_blank"><img id="discord" src="Discord-Emblem.png" alt="Discord">: ponco10</a></div>
         <div class="text-element"><a class="youtube" href="https://www.youtube.com/@ponco4331" target="_blank"><img id="Youtube" src="Youtube_logo.png" alt="Youtube"></a></div>
+        <div class="text-element"><a href="https://open.spotify.com/user/8hlbvmgy0onl8xgmla800stwd" target="_blank"><img src="Spotify_Primary_Logo_RGB_Green.png" id="spotify" alt="Spotify"></a></div>
     </div>
     </div>
     <div class="starfall">
@@ -59,5 +61,43 @@
         <div class="falling-star"></div>
       </div>
 </div>
+
+<script language=javascript>
+    var rev = "fwd";
+    function titlebar(val){
+        var msg  = "Ponco.hu";
+        var res = " ";
+        var speed = 100;
+        var pos = val;
+        msg = "   |-"+msg+"-|";
+        var le = msg.length;
+        if(rev == "fwd"){
+            if(pos < le){
+                pos = pos+1;
+                scroll = msg.substr(0,pos);
+                document.title = scroll;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "bwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+        else {
+            if(pos > 0) {
+                pos = pos-1;
+                var ale = le-pos;
+                scrol = msg.substr(ale,le);
+                document.title = scrol;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "fwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+    }
+    titlebar(0);
+</script>
 </body>
 </html>

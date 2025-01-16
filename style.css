@@ -40,8 +40,13 @@ img {
 }
 
 #discord {
-    height: 50px;
+    height: 55px;
     width: 100px;
+}
+
+#steam {
+    height: 50px;
+    width: 50px;
 }
 
 body

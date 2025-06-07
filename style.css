@@ -89,7 +89,7 @@ body
 }
 
 #ponco {
-    border-style: solid ;
+   /* border-style: solid ;
     right: 120px;
     top: 393px;
     border-color: #a0276e;
@@ -97,6 +97,7 @@ body
     width: 300px;
     height: 300px;
     position:absolute
+    */
 }
 
 .player {
